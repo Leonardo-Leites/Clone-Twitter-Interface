@@ -1,0 +1,260 @@
+.scroll{
+    height: 400px;
+}
+.barra-pesquisa{
+    background-color: rgb(32,35,39);
+    border-radius: 50px;
+    width: 27%;
+    height: 9%;
+    margin-top: -65px;
+    margin-left: 2%;
+    position: fixed;
+}
+.barra-pesquisa i{
+    font-weight: normal;
+    color: gray;
+    margin-top: 5%;
+    margin-right: 2%;
+    font-size: calc(1em + 0.3vw);
+}
+
+.barra-pesquisa input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: left;
+    width: 80%;
+    
+}
+.barra-pesquisa input::placeholder{
+    color: gray;
+    font-size: calc(1em + 0.3vw);
+}
+
+@media screen and (max-width: 1000px){
+    .barra-pesquisa{    
+        height: 8%;
+    }
+}
+
+.acontecendo{
+    background-color: rgb(21,24,28);
+    width: 90%;
+    border-radius: 15px;
+    margin:auto;
+    margin-top: 70px;
+    text-align: left;
+}
+
+.acontecendo p{
+    padding: 5px 10px;
+    font-size: calc(19px + 0.3vw);
+    font-weight: bold;
+    text-align: left;
+    height: fit-content;
+    margin: 7px;
+    color: rgba(255, 255, 255, 0.789);
+}
+.acontecendo p[id^="primeira"]{
+    padding-top: 10px;
+}
+.acontecendo div{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.acontecendo div .texto{
+    width: 80%;
+    align-items: center;
+}
+.acontecendo div p{
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: calc(14px + 0.3vw);
+}
+.acontecendo div p span{
+    font-weight: normal;
+    font-size: calc(8px + 0.3vw);
+    margin: 2px;
+    color: gray;
+}
+.acontecendo div p span span{
+    color: rgb(21,115,172);
+}
+.acontecendo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: gray;
+    margin-top: 4%;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+
+        .acontecendo img{
+            margin-top: 30%;
+            width: 50px;
+            height: 50px;
+            margin-right: 2%;
+        }
+}
+
+.acontecendo > div:hover{
+    background-color: rgb(28, 33, 38);
+}
+.acontecendo div[id^="mostrar"]{
+    width: 100%;
+    height: 50px;
+}
+.acontecendo div[id^="mostrar"] p{
+    font-weight: normal;
+    color: rgb(21,115,172);
+}
+
+.acontecendo div[id^="mostrar"]:hover{
+    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.acontecendo hr{
+    border: none;
+    border-top: 1px rgb(50, 50, 50) solid; 
+}
+
+
+.quemSeguir{
+    background-color: rgb(21,24,28);
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+    margin:auto;
+    margin-top: 15px;
+    text-align: left;
+}
+.quemSeguir p{
+    padding: 5px 10px;
+    font-size: calc(18px + 0.3vw);
+    font-weight: bold;
+    text-align: left;
+    height: fit-content;
+    margin: 7px;
+    color: rgba(255, 255, 255, 0.789);
+}
+.quemSeguir p[id^="primeira"]{
+    padding-top: 10px;
+}
+.quemSeguir div{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.quemSeguir div img{
+    border-radius: 50px;
+    width: 50px;
+    height: 40px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 5%;
+    height: auto;
+    cursor: pointer;
+}
+.quemSeguir div button{
+    background-color: transparent;
+    border: 1px solid rgb(21,115,172);
+    color: rgb(25, 134, 201);
+    font-weight: bold;
+    font-size: 16px;
+    height: 35px;
+    width: 80px;
+    border-radius: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    float: right;
+    cursor: pointer;
+}
+.quemSeguir div button:hover{
+    background-color: rgba(0, 157, 255, 0.083);
+}
+.quemSeguir div .texto{
+    width: 50%;
+    margin-left: 0;
+    align-items: center;
+}
+.quemSeguir div .texto p{
+    font-weight: normal;
+    font-size: calc(8px + 0.3vw);
+    margin: 2px;
+    color: gray;
+}
+.quemSeguir div .texto p span{
+    font-size: calc(10px + 0.3vw);
+    font-weight: bold;
+    text-align: left;
+    height: fit-content;
+    color: rgba(255, 255, 255, 0.789);
+}
+.quemSeguir div .texto span:hover{
+    text-decoration-line: underline;
+}
+.quemSeguir div p{
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: calc(15px + 0.3vw);
+}
+.quemSeguir > div:hover{
+    background-color: rgb(28, 33, 38);
+}
+.quemSeguir div[id^="mostrar"]{
+    width: 100%;
+    height: 50px;
+}
+.quemSeguir div[id^="mostrar"] p{
+    font-weight: normal;
+    color: rgb(21,115,172);
+}
+
+.quemSeguir div[id^="mostrar"]:hover{
+    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.quemSeguir hr{
+    border: none;
+    border-top: 1px rgb(50, 50, 50) solid; 
+}
+.termos{
+    width: 70%;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.termos p div{
+    color: gray;
+    font-size: 13px;
+    display: inline-flex;
+    float: left;
+    margin-right: 13px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.termos p div:hover{
+    text-decoration-line: underline;
+}
+.termos p div i {
+    padding-top: 50%;
+}
+.termos p div[id^="icon"]{
+    text-decoration-line: none;
+    margin-left: -8px;
+}
+.termos p div span{
+    color: gray;
+    font-size: 13px;
+    text-align: left;
+    cursor: auto;
+}
+.termos p div[id^="direitos"]{
+    text-decoration-line: none;
+}

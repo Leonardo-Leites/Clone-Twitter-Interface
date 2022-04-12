@@ -1,0 +1,385 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.login {
+    overflow-y: scroll;
+}
+
+.painel {
+    width: 41%;
+    height: 590px;
+    object-fit: cover;
+}
+
+.logo {
+    width: 3.8%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 4%;
+    margin-bottom: 35%;
+}
+
+.container p, h1 {
+    width: 55%;
+    color: white;
+    margin-left: 45%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: -30%;
+    margin-bottom: 40px;
+    font-size: 65px;
+}
+
+.container_button{
+    margin-left: 45%;
+}
+
+.button {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 55%;
+    height: 43px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 70%;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    font-weight: bold;
+}
+
+[id^="button_2"] {
+    color: rgb(29, 161, 242);
+    border: 1px solid rgb(29, 161, 242);
+    background-color: transparent;
+}
+.button:hover {
+    opacity: 0.9;
+}
+
+[id^="button_2"]:hover {
+    background-color: rgba(31, 168, 253, 0.083);
+}
+
+.containerFeed {
+    display: grid;
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --leftWidth: 22%;
+    --midWidth: 47%;
+    --rightWidth: 31%;
+}
+/* ================================= */
+.esquerda {
+    width:var(--leftWidth);
+    background-color:rgb(0, 0, 0);
+    position: fixed;
+}
+
+.esquerda-conteudo{
+    margin-top: 5%;
+    margin-left: 10%;
+    width:89%;
+    height:100%;
+}
+
+.esquerda-conteudo img{
+    margin-left: -75%;
+    width: 35px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.esquerda-conteudo .logo_esquerda{
+   padding: 5px;
+   margin-bottom: 5px;
+   width: 45px;
+   height: 45px;
+   margin-top: -5px;
+   object-fit: contain;
+}
+.esquerda-conteudo .logo_esquerda:hover{
+    background-color: rgba(0, 157, 255, 0.138);
+    border-radius: 60px;
+ }
+
+.esquerda button{
+    font-size: 21px;
+    font-weight: bold;
+    display:block;
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    color: white;
+}
+
+.esquerda button:hover{
+    cursor:pointer;
+    background-color: rgba(0, 157, 255, 0.138);
+    border-radius: 50px;
+    color: rgb(0, 157, 255);
+}
+
+.esquerda button i{
+    padding: 5px;
+    padding-right: 20px;
+    width: 20px;
+
+} 
+.esquerda .button_tweetar{
+    background-color: rgba(0, 157, 255);
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.esquerda .button_tweetar:hover{
+    background-color: rgba(0, 157, 255);
+    color: white;
+    opacity: 0.9;
+}
+.esquerda .button_user{
+    margin-top: 35%;
+    height: 65px;
+    width: 95%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+.esquerda .button_user img{
+    margin-top: 3%;
+    border-radius: 60px;
+    margin-left: 5%;
+}
+.esquerda .button_user i{
+    width: 15px;
+    font-weight: normal;
+    margin-top: 5%;
+    float: right;
+    margin-right: -10px;
+}
+.esquerda .button_user:hover{
+    color: white;
+}
+.esquerda .button_user p{
+    font-size: 15px;
+    margin-left: 5%;
+    width: 150px;
+    text-align: justify;
+}
+.esquerda .button_user span{
+    font-size: 15px;
+    text-align: justify;
+    color:rgb(117, 117, 117);
+    font-weight: normal;
+}
+/* ===================== */
+.meio {
+    width:var(--midWidth);
+    margin-left: var(--leftWidth);
+    border: rgb(50, 50, 50) solid thin;
+    border-top: none;
+    min-height: 100%;
+    height: auto;
+    color: white;
+    z-index: 5555;
+}
+
+.meio .topo p{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    margin-top: 0%;
+    position:absolute;
+    left:15px;
+}
+.meio .topo{
+    z-index: 99999;
+}
+
+.meio .topo i{
+    position:absolute;
+    padding: 5px;
+    top:10%;
+    right:10px;
+    color:rgba(0, 157, 255);
+    font-size: 28px;
+}
+.meio .topo i:hover{
+    background-color: rgba(0, 157, 255, 0.138);
+    border-radius: 50px;
+}
+.meio .topo{
+    display: flex;
+    flex-direction: row;
+    height:40px;
+    border-bottom: rgb(50, 50, 50) solid thin;
+    background-color: black;
+    position: fixed;
+    width: var(--midWidth);
+    padding-top: 1%;
+    cursor: pointer;
+}
+/* ======================== */
+.meio-conteudo{
+    height: auto;
+}
+.meio .meio-conteudo .feed{
+  margin-top: 60px;
+  height: 170px;
+  border-bottom: solid rgba(50, 50, 50, 0.583) 10px;
+}
+.meio .meio-conteudo .feed img{
+    border-radius: 50px;
+    width: 50px;
+    margin-left: 2%;
+    margin-top: 4px;
+    float:left;
+    height: auto;
+    cursor: pointer;
+}
+.meio .meio-conteudo .feed textarea{
+    resize: none;
+    font-size: 20px;
+    width: 85%;
+    margin-left: 10px;
+    margin-top:3%;
+    background-color: transparent;
+    border: none;
+    color:white;
+}
+
+.meio .meio-conteudo .feed textarea:focus{
+    outline: none;
+}
+
+.meio .meio-conteudo .feed .text button {
+    background-color: transparent;
+    border: none;
+    color:rgba(0, 157, 255);
+    padding: 5px;
+    float: left;
+    margin-left: 12%;
+    margin-top: -20px;
+    font-size: 13px;
+    font-weight:bold;
+    cursor: pointer;
+}
+.meio .meio-conteudo .feed .text button:hover {
+    background-color: rgba(0, 157, 255, 0.138);
+    border-radius: 60px;
+}
+.meio .meio-conteudo .feed .text button i {
+    width: 30px;
+    font-size: large;
+}
+.meio .meio-conteudo .feed hr{
+    margin-left: 13%;
+    margin-right: 3%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-top: 1px rgb(50, 50, 50) solid;
+}
+
+.meio .meio-conteudo .feed .icons-tweetar{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+.meio .meio-conteudo .feed button i {
+    width: 30px;
+    font-size: large;
+}
+.meio .meio-conteudo .feed .icons-tweetar button[id^="btn-tweetar"] {
+    width: 14%;
+    height: 75%;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: auto;
+    padding: 10px 15px;
+    float: right;
+    margin-top: -6%;
+    margin-right: 3%;
+    background-color: rgb(0, 157, 255);
+    opacity: 0.5;
+}
+.meio .meio-conteudo .feed .icons-tweetar button[id^="btn-tweetar"]:hover {
+    background-color: rgb(0, 157, 255);
+    cursor: auto;
+}
+.meio .meio-conteudo .feed .icons-tweetar button {
+    float: left;
+    color: rgb(0, 157, 255);
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-top: -6%;
+}
+.meio .meio-conteudo .feed .icons-tweetar button[id^="i_one"]{
+    margin-left: 10%;
+}
+.meio .meio-conteudo .feed .icons-tweetar button:hover {
+    background-color: rgba(0, 157, 255, 0.138);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+ /* ================= */
+.direita {
+    position: absolute;
+    top:0px;
+    z-index: 1;
+    width: var(--rightWidth);
+    margin-left: calc(var(--leftWidth) + var(--midWidth));
+    background-color:rgba(0, 0, 0, 0.665);
+}
+
+footer {
+    margin-top: 8.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+footer p {
+    color: rgba(128, 128, 128, 0.611);
+    font-size: 12px;
+    text-align: center;
+    word-spacing: 10px;
+    background-color:rgba(0, 0, 0, 0.665);
+}
